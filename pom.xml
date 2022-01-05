@@ -36,6 +36,7 @@
 				      <username>saedla</username>
 				      <password>Manu@2000</password>
 				      <applicationName>muleci-cd</applicationName>
+				      <businessGroup>SSV</businessGroup>
 				      <environment>Sandbox</environment>
 				      <workers>1</workers>
 				      <workerType>MICRO</workerType>
