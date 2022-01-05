@@ -33,7 +33,7 @@
 				<cloudHubDeployment>
 				      <uri>https://anypoint.mulesoft.com</uri>
 				      <muleVersion>4.3.0</muleVersion>
-				      <username>saedla</username>
+				      <username>saedla1</username>
 				      <password>Manu@2000</password>
 				      <applicationName>muleci-cd</applicationName>
 				      <businessGroup>SSV</businessGroup>
