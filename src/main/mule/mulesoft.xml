@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="17c851d8-10b8-470e-8a95-5da782fc2cfe" >
+		<http:listener-connection host="localhost" port="8081" />
+	</http:listener-config>
+	<flow name="mulesoftFlow" doc:id="56dfd736-e9c7-484f-9c92-1f22a98f3925" >
+		<http:listener doc:name="Listener" doc:id="a099339e-6494-4a7c-a60f-884d86308b1a" config-ref="HTTP_Listener_config" path="Mulesoft"/>
+		<set-payload value="Mulesoft Cicd" doc:name="Set Payload" doc:id="6a9dc865-13fd-470c-acbc-3ca0ef86bcb2" />
+		<logger level="ERROR" doc:name="Logger" doc:id="367732e2-d81a-4f2e-953f-168885cdf653" message="Connect to git for mulecicd setup"/>
+	</flow>
+</mule>
